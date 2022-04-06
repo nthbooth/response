@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:3.15.4
 
 # Run every minute
 RUN echo '*  *  *  *  *    wget -qO- response:8000/slack/cron_minute' > /etc/crontabs/root
